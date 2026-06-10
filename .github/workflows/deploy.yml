@@ -30,10 +30,9 @@ jobs:
     - name: 🏗️ Build and push Docker image
       uses: docker/build-push-action@v6
       with:
+        context: .
         push: true
         tags: ghcr.io/byronmoreno/tecticom:1.0.0
-        cache-from: type=registry,ref=ghcr.io/byronmoreno/tecticom:cache
-        cache-to: type=registry,ref=ghcr.io/byronmoreno/tecticom:cache,mode=max
 
     - name: 🧾 Mostrar variables básicas (solo locales, no secretos)
       run: |
