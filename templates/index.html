@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECTICOM 2026 | Yavirac</title>
+    
+    <!-- Bootstrap 5.3.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="/static/css/estilos.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                <img src="/static/img/logo_yavirac_modern.png" alt="Yavirac Logo">
+                <div class="d-flex flex-column lh-1">
+                    <span class="text-white fw-bold">YAVIRAC</span>
+                    <small style="font-size: 0.6rem; color: #a5b4fc; letter-spacing: 0.5px; white-space: nowrap;">TURISMO Y PATRIMONIO</small>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-1">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom active" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="#acerca">Acerca del Evento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="#pilares">Pilares</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="#ponentes">Ponentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="#registro">Registro</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="inicio" class="hero-section">
+        <div class="hero-glow-orb"></div>
+        <div class="container">
+            <div class="row align-items-center gy-5">
+                <div class="col-lg-7 text-start">
+                    <div class="hero-tag">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                        Carrera de Desarrollo de Software
+                    </div>
+                    <h1 class="hero-title">
+                        Bienvenidos a <br>
+                        <span class="orange-text">TECTICOM 2026</span>
+                    </h1>
+                    <p class="hero-description">
+                        El punto de encuentro definitivo sobre <strong>Tecnología, Programación e Inteligencia Artificial</strong>. Inspírate con las últimas tendencias de la industria y conecta con expertos que están redefiniendo el desarrollo de software.
+                    </p>
+                    
+                    <div class="hero-info-badges">
+                        <div class="info-badge">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f06822" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                            <span>26 de Junio, 2026</span>
+                        </div>
+                        <div class="info-badge">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f06822" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                            <span>10:00 AM</span>
+                        </div>
+                        <div class="info-badge">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f06822" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <span>Presencial / Virtual</span>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-wrap gap-3">
+                        <button class="btn btn-yavirac-primary btn-lg" data-bs-toggle="modal" data-bs-target="#registroModal">
+                            Asegurar Mi Entrada
+                        </button>
+                        <button class="btn btn-yavirac-secondary btn-lg d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#aficheModal">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                            Ver Afiche Oficial
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center d-none d-lg-block">
+                    <!-- Visual decoration or logo preview in hero -->
+                    <div class="logo-container-hero position-relative">
+                        <img src="/static/img/logo_yavirac_modern.png" alt="Yavirac Hero Logo" class="img-fluid py-2" style="max-height: 250px;">
+                        <div class="position-absolute top-100 start-50 translate-middle-x bg-dark px-3 py-1 text-uppercase text-muted text-center" style="font-size:0.65rem; border-radius: 20px; border: 1px solid var(--border-glass); white-space: nowrap;">
+                            Instituto Superior Tecnológico
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Countdown Section -->
+    <section class="container countdown-section">
+        <div class="glass-panel countdown-container text-center">
+            <h3 class="countdown-title">Faltan para el Evento</h3>
+            <div class="row row-cols-2 row-cols-md-4 g-4 mt-2 justify-content-center">
+                <div class="col">
+                    <div class="countdown-box">
+                        <div class="countdown-number" id="dias">00</div>
+                        <div class="countdown-label">Días</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="countdown-box">
+                        <div class="countdown-number" id="horas">00</div>
+                        <div class="countdown-label">Horas</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="countdown-box">
+                        <div class="countdown-number" id="minutos">00</div>
+                        <div class="countdown-label">Minutos</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="countdown-box">
+                        <div class="countdown-number" id="segundos">00</div>
+                        <div class="countdown-label">Segundos</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="acerca" class="py-5" style="background: radial-gradient(circle at 10% 50%, rgba(240, 104, 34, 0.03), transparent 30%);">
+        <div class="container text-center py-4">
+            <div class="section-title-wrapper">
+                <span class="section-subtitle">Sobre el Evento</span>
+                <h2 class="section-title text-white">¿Qué es TECTICOM 2026?</h2>
+                <div class="mx-auto" style="width: 60px; height: 3px; background: var(--yavirac-orange); margin-top: 15px;"></div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <p class="about-text mb-4">
+                        TECTICOM es la conferencia líder organizada por la <strong>Carrera de Desarrollo de Software del Instituto Superior Tecnológico de Turismo y Patrimonio “YAVIRAC”</strong>. Es un espacio diseñado para conectar a estudiantes, profesionales, emprendedores y expertos en tecnología. Este año nos sumergimos de lleno en los avances tecnológicos del desarrollo moderno y las soluciones disruptivas impulsadas por Inteligencia Artificial y Machine Learning.
+                    </p>
+                    <p class="about-text-secondary">
+                        Participa de conferencias exclusivas, demostraciones en vivo, casos de éxito reales y amplía tu red de contactos dentro de la industria tecnológica de la región.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pillars Section -->
+    <section id="pilares" class="py-5" style="background-color: var(--bg-dark-secondary);">
+        <div class="container py-4 text-center">
+            <div class="section-title-wrapper">
+                <span class="section-subtitle">Áreas Temáticas</span>
+                <h2 class="section-title text-white">Nuestros Tres Pilares</h2>
+                <p class="section-description text-secondary">
+                    Explora las vertientes que darán forma a las conferencias y talleres de TECTICOM 2026.
+                </p>
+                <div class="mx-auto" style="width: 60px; height: 3px; background: var(--yavirac-orange); margin-top: 15px;"></div>
+            </div>
+            
+            <div class="row g-4 mt-2">
+                <!-- Pillar 1: Tecnología -->
+                <div class="col-md-4">
+                    <div class="glass-panel pillar-card text-start">
+                        <div class="pillar-number">Pilar 01</div>
+                        <div class="pillar-icon-wrapper">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                                <line x1="20" y1="6" x2="20.01" y2="6"></line>
+                                <line x1="20" y1="18" x2="20.01" y2="18"></line>
+                            </svg>
+                        </div>
+                        <h3 class="pillar-title text-white">Tecnología</h3>
+                        <p class="pillar-description">
+                            Analizaremos los últimos <strong>avances tecnológicos</strong>, infraestructura en la nube, seguridad de la información y la transformación digital que redefine las industrias actuales.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Pillar 2: Programación -->
+                <div class="col-md-4">
+                    <div class="glass-panel pillar-card text-start">
+                        <div class="pillar-number">Pilar 02</div>
+                        <div class="pillar-icon-wrapper">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="pillar-title text-white">Programación</h3>
+                        <p class="pillar-description">
+                            Descubre las mejores prácticas de <strong>desarrollo de software y código limpio</strong>, frameworks modernos, arquitecturas eficientes y las metodologías que impulsan a los equipos ágiles.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Pillar 3: Inteligencia Artificial -->
+                <div class="col-md-4">
+                    <div class="glass-panel pillar-card text-start">
+                        <div class="pillar-number">Pilar 03</div>
+                        <div class="pillar-icon-wrapper">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path>
+                                <path d="M19 10v1a7 7 0 0 1-14 0v-1"></path>
+                                <line x1="12" y1="19" x2="12" y2="22"></line>
+                            </svg>
+                        </div>
+                        <h3 class="pillar-title text-white">Inteligencia Artificial</h3>
+                        <p class="pillar-description">
+                            Explora <strong>soluciones de IA y Machine Learning</strong>. Desde redes neuronales hasta agentes inteligentes de automatización y herramientas generativas aplicadas a problemas de negocio reales.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speakers Section -->
+    <section id="ponentes" class="py-5">
+        <div class="container py-4 text-center">
+            <div class="section-title-wrapper">
+                <span class="section-subtitle">Ponentes</span>
+                <h2 class="section-title text-white">Expertos Invitados</h2>
+                <p class="section-description text-secondary">
+                    Líderes de la industria e investigadores listos para compartir sus conocimientos.
+                </p>
+                <div class="mx-auto" style="width: 60px; height: 3px; background: var(--yavirac-orange); margin-top: 15px;"></div>
+            </div>
+            
+            <div class="row g-4 mt-2">
+                <!-- Speaker 1 -->
+                <div class="col-md-4">
+                    <div class="ponente-card">
+                        <div class="ponente-img-container">
+                            <!-- SVG Placeholder for Avatar -->
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                        <div class="ponente-card-body text-start">
+                            <h4 class="ponente-name text-white">Msc. Roberto Méndez</h4>
+                            <div class="ponente-role">Chief AI Architect en TechCorp</div>
+                            <div class="ponente-topic">
+                                <strong>Tema:</strong> Redefiniendo el ciclo de vida del software a través de modelos generativos de IA.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Speaker 2 -->
+                <div class="col-md-4">
+                    <div class="ponente-card">
+                        <div class="ponente-img-container">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                        <div class="ponente-card-body text-start">
+                            <h4 class="ponente-name text-white">Ing. Sofía Valenzuela</h4>
+                            <div class="ponente-role">Senior Lead Engineer en DevGlobal</div>
+                            <div class="ponente-topic">
+                                <strong>Tema:</strong> Arquitectura limpia y patrones avanzados para desarrollo de microservicios robustos.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Speaker 3 -->
+                <div class="col-md-4">
+                    <div class="ponente-card">
+                        <div class="ponente-img-container">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                        <div class="ponente-card-body text-start">
+                            <h4 class="ponente-name text-white">Ing. Carlos Ortega</h4>
+                            <div class="ponente-role">Director de Innovación en IST Yavirac</div>
+                            <div class="ponente-topic">
+                                <strong>Tema:</strong> El rol estratégico de la academia en el surgimiento de nuevos talentos tech.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA / Registration Section -->
+    <section id="registro" class="cta-section">
+        <div class="container">
+            <div class="glass-panel cta-box text-center" style="border-radius: 24px;">
+                <span class="text-uppercase fw-bold" style="color: var(--yavirac-orange); font-size: 0.9rem; letter-spacing: 2px;">Cupos Limitados</span>
+                <h2 class="text-white mt-2 mb-3 fw-bold display-6">¡No te quedes fuera de TECTICOM 2026!</h2>
+                <p class="text-secondary mx-auto mb-4" style="max-width: 600px;">
+                    Regístrate hoy mismo y asegura tu asistencia para participar de forma presencial o remota en todas las charlas magistrales.
+                </p>
+                <button class="btn btn-yavirac-primary btn-lg px-5 py-3" data-bs-toggle="modal" data-bs-target="#registroModal">
+                    Registrarme de Forma Gratuita
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-custom">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-5">
+                    <div class="footer-logo d-flex align-items-center gap-2">
+                        <img src="/static/img/logo_yavirac_modern.png" alt="Yavirac logo footer">
+                        <span class="text-white fw-bold fs-4">Yavirac</span>
+                    </div>
+                    <p class="footer-description">
+                        El Instituto Superior Tecnológico de Turismo y Patrimonio “YAVIRAC” forma tecnólogos de excelencia capaces de responder a los retos dinámicos de la era digital y de la industria de software.
+                    </p>
+                    <p class="text-white fw-semibold small">
+                        Organizado por la Carrera de Desarrollo de Software.
+                    </p>
+                </div>
+                <div class="col-lg-3 offset-lg-1 col-md-6">
+                    <h5 class="footer-title">Enlaces Rápidos</h5>
+                    <ul class="footer-links">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#acerca">Sobre el Evento</a></li>
+                        <li><a href="#pilares">Tres Pilares</a></li>
+                        <li><a href="#ponentes">Ponentes Confirmados</a></li>
+                        <li><a href="#registro">Registro</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Contacto</h5>
+                    <ul class="list-unstyled text-secondary" style="font-size: 0.95rem;">
+                        <li class="mb-2"><strong>Dirección:</strong> Quito, Ecuador</li>
+                        <li class="mb-2"><strong>Email:</strong> info@yavirac.edu.ec</li>
+                        <li class="mb-2"><strong>Teléfono:</strong> +593 2-XXX-XXXX</li>
+                        <li class="mb-2"><strong>Carrera:</strong> Desarrollo de Software</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom text-center">
+                <p class="mb-0">
+                    &copy; 2026 TECTICOM & Instituto Superior Tecnológico de Turismo y Patrimonio “YAVIRAC”. Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- REGISTRATION MODAL -->
+    <div class="modal fade" id="registroModal" tabindex="-1" aria-labelledby="registroModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-content-custom">
+                <div class="modal-header modal-header-custom d-flex justify-content-between align-items-center">
+                    <h5 class="modal-title fw-bold text-white" id="registroModalLabel">Formulario de Inscripción</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body modal-body-custom">
+                    <form id="registrationForm" onsubmit="handleRegistration(event)">
+                        <div class="mb-3">
+                            <label for="regName" class="form-label form-label-custom">Nombre Completo</label>
+                            <input type="text" class="form-control form-control-custom" id="regName" required placeholder="Ej. Juan Pérez">
+                        </div>
+                        <div class="mb-3">
+                            <label for="regEmail" class="form-label form-label-custom">Correo Electrónico</label>
+                            <input type="email" class="form-control form-control-custom" id="regEmail" required placeholder="juan@ejemplo.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="regInstitution" class="form-label form-label-custom">Institución o Empresa</label>
+                            <input type="text" class="form-control form-control-custom" id="regInstitution" placeholder="Instituto Yavirac, Freelance, etc.">
+                        </div>
+                        <div class="mb-4">
+                            <label for="regModalidad" class="form-label form-label-custom">Modalidad de Asistencia</label>
+                            <select class="form-select form-control-custom" id="regModalidad" required>
+                                <option value="" disabled selected>Selecciona una opción</option>
+                                <option value="presencial">Presencial (Cupos limitados)</option>
+                                <option value="virtual">Virtual (Vía Streaming)</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-yavirac-primary w-100 py-3">Enviar Inscripción</button>
+                    </form>
+                    <div id="regSuccessMsg" class="mt-4 p-3 bg-success bg-opacity-10 border border-success border-opacity-20 text-success rounded text-center d-none">
+                        <strong>¡Registro Exitoso!</strong> Hemos recibido tus datos. Te enviaremos tu credencial digital de acceso por correo.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FLYER MODAL (LIGHTBOX) -->
+    <div class="modal fade" id="aficheModal" tabindex="-1" aria-labelledby="aficheModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content modal-content-custom">
+                <div class="modal-header modal-header-custom d-flex justify-content-between align-items-center">
+                    <h5 class="modal-title fw-bold text-white" id="aficheModalLabel">Afiche Oficial TECTICOM 2026</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body modal-body-custom text-center p-0">
+                    <img src="/static/img/flyer.jpg" alt="TECTICOM 2026 Flyer" class="img-fluid rounded-bottom" style="max-height: 80vh; object-fit: contain;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript logic -->
+    <script>
+        // Countdown timer implementation
+        const fechaEvento = new Date("June 26, 2026 10:00:00").getTime();
+
+        function updateCountdown() {
+            const ahora = new Date().getTime();
+            const diferencia = fechaEvento - ahora;
+
+            if (diferencia <= 0) {
+                document.getElementById("dias").innerHTML = "00";
+                document.getElementById("horas").innerHTML = "00";
+                document.getElementById("minutos").innerHTML = "00";
+                document.getElementById("segundos").innerHTML = "00";
+                return;
+            }
+
+            const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+            const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+            const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
+
+            // Pad numbers with leading zeros if they are single digits
+            document.getElementById("dias").innerHTML = String(dias).padStart(2, '0');
+            document.getElementById("horas").innerHTML = String(horas).padStart(2, '0');
+            document.getElementById("minutos").innerHTML = String(minutos).padStart(2, '0');
+            document.getElementById("segundos").innerHTML = String(segundos).padStart(2, '0');
+        }
+
+        // Run immediately to avoid showing '00' on load
+        updateCountdown();
+        // Update every second
+        setInterval(updateCountdown, 1000);
+
+        // Registration form submission handler
+        function handleRegistration(event) {
+            event.preventDefault();
+            
+            // Highlight success state
+            document.getElementById("registrationForm").classList.add("d-none");
+            document.getElementById("regSuccessMsg").classList.remove("d-none");
+            
+            // Optional: reset form after delay and hide modal
+            setTimeout(() => {
+                const modalEl = document.getElementById('registroModal');
+                const modal = bootstrap.Modal.getInstance(modalEl);
+                if (modal) {
+                    modal.hide();
+                }
+                // Reset form state for next time
+                setTimeout(() => {
+                    document.getElementById("registrationForm").reset();
+                    document.getElementById("registrationForm").classList.remove("d-none");
+                    document.getElementById("regSuccessMsg").classList.add("d-none");
+                }, 500);
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
