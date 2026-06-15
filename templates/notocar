@@ -234,114 +234,28 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-lg-10">
-            <div class="agenda-timeline text-start mx-auto" style="max-width: 800px;">
-              
-              <!-- Session 1 -->
-              <div class="timeline-item">
-                <div class="timeline-time">10h00 <br><span class="time-end">- 10h30</span></div>
-                <div class="timeline-content glass-panel">
-                  <h4 class="timeline-speaker text-white mb-1">Mafer Escudero</h4>
-                  <p class="timeline-topic text-secondary mb-0">Ingeniería de Software en la Era de la IA: Cómo escalar tecnología sin escalar la brecha digital</p>
-                </div>
-              </div>
-
-              <!-- Session 2 -->
-              <div class="timeline-item">
-                <div class="timeline-time">10h30 <br><span class="time-end">- 11h00</span></div>
-                <div class="timeline-content glass-panel">
-                  <h4 class="timeline-speaker text-white mb-1">Iván Terceros</h4>
-                  <p class="timeline-topic text-secondary mb-0">Videojuegos: Cómo una Game Jam puede cambiar tu carrera profesional</p>
-                </div>
-              </div>
-
-              <!-- Session 3 -->
-              <div class="timeline-item">
-                <div class="timeline-time">11h00 <br><span class="time-end">- 11h30</span></div>
-                <div class="timeline-content glass-panel">
-                  <h4 class="timeline-speaker text-white mb-1">Nilet Soto</h4>
-                  <p class="timeline-topic text-secondary mb-0">La habilidad más importante de 2030 no es programar: es pensar</p>
-                </div>
-              </div>
-
-              <!-- Session 4 -->
-              <div class="timeline-item">
-                <div class="timeline-time">11h30 <br><span class="time-end">- 12h00</span></div>
-                <div class="timeline-content glass-panel">
-                  <h4 class="timeline-speaker text-white mb-1">Darwin Emiliano Vaca Barrera</h4>
-                  <p class="timeline-topic text-secondary mb-0">Cibercrimen transnacional en el entorno educativo: phishing, ransomware, estafas digitales e infraestructura maliciosa</p>
-                </div>
-              </div>
-
-              <!-- Break -->
-              <div class="timeline-item timeline-break">
-                <div class="timeline-time">12h00 <br><span class="time-end">- 14h00</span></div>
-                <div class="timeline-content text-center py-2" style="border: 1px dashed var(--yavirac-orange); border-radius: 12px; background: rgba(240, 104, 34, 0.05);">
-                  <span class="text-white-50 text-uppercase" style="letter-spacing: 2px; font-size: 0.9rem;">Receso / Almuerzo</span>
-                </div>
-              </div>
-
-              <!-- Session 5 -->
-              <div class="timeline-item">
-                <div class="timeline-time">14h00 <br><span class="time-end">- 14h30</span></div>
-                <div class="timeline-content glass-panel">
-                  <h4 class="timeline-speaker text-white mb-1">Roberto Carlos Catuta</h4>
-                  <p class="timeline-topic text-secondary mb-0">El Factor Humano: Liderazgo y Soft Skills en la Era de la IA</p>
-                </div>
-              </div>
-
-              <!-- Session 6 -->
-              <div class="timeline-item">
-                <div class="timeline-time">14h30 <br><span class="time-end">- 15h00</span></div>
-                <div class="timeline-content glass-panel">
-                  <h4 class="timeline-speaker text-white mb-1">Kevin Farinango</h4>
-                  <p class="timeline-topic text-secondary mb-0">Del texto al contexto: La ciencia detrás de RAG y la búsqueda semántica.</p>
-                </div>
-              </div>
-
-              <!-- Session 7 -->
-              <div class="timeline-item">
-                <div class="timeline-time">15h00 <br><span class="time-end">- 15h30</span></div>
-                <div class="timeline-content glass-panel">
-                  <h4 class="timeline-speaker text-white mb-1">Joel Rivera</h4>
-                  <p class="timeline-topic text-secondary mb-0">Desarrollo de software en modalidad Dual</p>
-                </div>
-              </div>
-
-              <!-- Session 8 -->
-              <div class="timeline-item">
-                <div class="timeline-time">15h30 <br><span class="time-end">- 16h00</span></div>
-                <div class="timeline-content glass-panel">
-                  <h4 class="timeline-speaker text-white mb-1">Byron Moreno</h4>
-                  <p class="timeline-topic text-secondary mb-0">Creando Aplicaciones con Inteligencia Artificial: Cómo Transformar una Idea en un Producto Funcional</p>
-                </div>
-              </div>
-
-              <!-- Session 9 -->
-              <div class="timeline-item">
-                <div class="timeline-time">16h00 <br><span class="time-end">- 16h30</span></div>
-                <div class="timeline-content glass-panel">
-                  <h4 class="timeline-speaker text-white mb-1">Juan Carlos Hinojosa</h4>
-                  <p class="timeline-topic text-secondary mb-0">El Factor Humano: Liderazgo y Soft Skills en la Era de la IA</p>
-                </div>
-              </div>
-
-              <!-- Session 10 -->
-              <div class="timeline-item">
-                <div class="timeline-time">16h30 <br><span class="time-end">- 17h00</span></div>
-                <div class="timeline-content glass-panel">
-                  <h4 class="timeline-speaker text-white mb-1">Diego Yanez</h4>
-                  <p class="timeline-topic text-secondary mb-0">Innovación Tecnológica con Recursos Limitados: Cómo generar transformación digital e impacto social sin grandes presupuestos.</p>
-                </div>
-              </div>
-
-            </div>
-            
-            <div class="glass-panel text-center mt-5 p-3" style="max-width: 600px; margin: auto;">
-              <p class="mb-0 text-white">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--yavirac-orange)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                <strong>Dirección del evento:</strong> Auditorio Hernán Rodríguez Castelo. García Moreno y Ambato.
-              </p>
-            </div>
+            <table class="table table-dark table-striped table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">Hora</th>
+                  <th scope="col">Ponente</th>
+                  <th scope="col">Tema</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>10h00 - 10h30</td><td>Mafer Escudero</td><td>Ingeniería de Software en la Era de la IA: Cómo escalar tecnología sin escalar la brecha digital</td></tr>
+                <tr><td>10h30 - 11h00</td><td>Iván Terceros</td><td>Videojuegos: Cómo una Game Jam puede cambiar tu carrera profesional</td></tr>
+                <tr><td>11h00 - 11h30</td><td>Nilet Soto</td><td>La habilidad más importante de 2030 no es programar: es pensar</td></tr>
+                <tr><td>11h30 - 12h00</td><td>DARWIN EMILIANO VACA BARRERA</td><td>Cibercrimen transnacional en el entorno educativo: phishing, ransomware, estafas digitales e infraestructura maliciosa</td></tr>
+                <tr><td>14h00 - 14h30</td><td>ROBERTO CARLOS CATUTA</td><td>El Factor Humano: Liderazgo y Soft Skills en la Era de la IA</td></tr>
+                <tr><td>14h30 - 15h00</td><td>Kevin Farinango</td><td>Del texto al contexto: La ciencia detrás de RAG y la búsqueda semántica.</td></tr>
+                <tr><td>15h00 - 15h30</td><td>Joel Rivera</td><td>Desarrollo de software en modalidad Dual</td></tr>
+                <tr><td>15h30 - 16h00</td><td>BYRON MORENO</td><td>Creando Aplicaciones con Inteligencia Artificial: Cómo Transformar una Idea en un Producto Funcional</td></tr>
+                <tr><td>16h00 - 16h30</td><td>Juan Carlos Hinojosa</td><td>El Factor Humano: Liderazgo y Soft Skills en la Era de la IA</td></tr>
+                <tr><td>16h30 - 17h00</td><td>DIEGO YANEZ</td><td>Innovación Tecnológica con Recursos Limitados: Cómo generar transformación digital e impacto social sin grandes presupuestos.</td></tr>
+              </tbody>
+            </table>
+            <p class="mt-4 text-white-50">Dirección del evento: Autoría Hernán Rodríguez Castelo. García Moreno y Ambato.</p>
           </div>
         </div>
       </div>
