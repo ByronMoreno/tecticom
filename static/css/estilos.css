@@ -583,6 +583,15 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     position: relative;
     overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.ponente-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%; /* imagen circular */
+    border: 4px solid #fff;
 }
 
 .ponente-img-container svg {

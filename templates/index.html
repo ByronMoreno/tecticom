@@ -240,7 +240,7 @@
               <div class="timeline-item">
                 <div class="timeline-time">10h00 <br><span class="time-end">- 10h30</span></div>
                 <div class="timeline-content glass-panel">
-                  <h4 class="timeline-speaker text-white mb-1">Mafer Escudero</h4>
+                  <h4 class="timeline-speaker text-white mb-1">María Fernanda Escudero</h4>
                   <p class="timeline-topic text-secondary mb-0">Ingeniería de Software en la Era de la IA: Cómo escalar tecnología sin escalar la brecha digital</p>
                 </div>
               </div>
@@ -358,30 +358,17 @@
       <p class="section-description text-secondary">Los líderes que compartirán su conocimiento en el evento.</p>
       <div class="mx-auto" style="width: 60px; height: 3px; background: var(--yavirac-orange); margin-top: 15px;"></div>
     </div>
-    <div class="row g-4 mt-2">
-      <!-- Speaker Mafer Escudero -->
+    <div class="row g-4 mt-2">      
+      <!-- Speaker María Fernanda Escudero -->
       <div class="col-md-4">
         <div class="ponente-card">
           <div class="ponente-img-container">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            <img src="/static/img/mfescudero.jpeg" alt="María Fernanda Escudero" class="ponente-img">
           </div>
           <div class="ponente-card-body text-start">
-            <h4 class="ponente-name text-white">Mafer Escudero</h4>
-            <div class="ponente-role">Ingeniería de Software en la Era de la IA</div>
-            <div class="ponente-topic"><strong>Tema:</strong> Ingeniería de Software en la Era de la IA: Cómo escalar tecnología sin escalar la brecha digital</div>
-          </div>
-        </div>
-      </div>
-      <!-- Speaker Kevin Farinango -->
-      <div class="col-md-4">
-        <div class="ponente-card">
-          <div class="ponente-img-container">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-          </div>
-          <div class="ponente-card-body text-start">
-            <h4 class="ponente-name text-white">Kevin Farinango</h4>
-            <div class="ponente-role">Del texto al contexto</div>
-            <div class="ponente-topic"><strong>Tema:</strong> La ciencia detrás de RAG y la búsqueda semántica.</div>
+            <h4 class="ponente-name text-white">María Fernanda Escudero</h4>
+            <div class="ponente-role">Directora del Programa de Excelencia para Latinoamérica (LATAM) | PMP</div>
+            <div class="ponente-topic"><strong>Tema:</strong>Ingeniería de Software en la Era de la IA: Cómo escalar tecnología sin escalar la brecha digital</div>
           </div>
         </div>
       </div>
@@ -389,12 +376,25 @@
       <div class="col-md-4">
         <div class="ponente-card">
           <div class="ponente-img-container">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            <img src="/static/img/nsoto.jpeg" alt="Nilet Soto" class="ponente-img">
           </div>
           <div class="ponente-card-body text-start">
             <h4 class="ponente-name text-white">Nilet Soto</h4>
             <div class="ponente-role">Pensamiento crítico 2030</div>
             <div class="ponente-topic"><strong>Tema:</strong> La habilidad más importante de 2030 no es programar: es pensar</div>
+          </div>
+        </div>
+      </div>
+      <!-- Speaker Kevin Farinango -->
+      <div class="col-md-4">
+        <div class="ponente-card">
+          <div class="ponente-img-container">
+            <img src="/static/img/kfarinango.jpeg" alt="Kevin Farinango" class="ponente-img">
+          </div>
+          <div class="ponente-card-body text-start">
+            <h4 class="ponente-name text-white">Kevin Farinango</h4>
+            <div class="ponente-role">Investigador en Inteligencia Artificial y Recuperación de Información</div>
+            <div class="ponente-topic"><strong>Tema:</strong> Del texto al contexto: La ciencia detrás de RAG y la búsqueda semántica.</div>
           </div>
         </div>
       </div>
@@ -562,27 +562,57 @@
         setInterval(updateCountdown, 1000);
 
         // Registration form submission handler
-        function handleRegistration(event) {
+        async function handleRegistration(event) {
             event.preventDefault();
             
-            // Highlight success state
-            document.getElementById("registrationForm").classList.add("d-none");
-            document.getElementById("regSuccessMsg").classList.remove("d-none");
-            
-            // Optional: reset form after delay and hide modal
-            setTimeout(() => {
-                const modalEl = document.getElementById('registroModal');
-                const modal = bootstrap.Modal.getInstance(modalEl);
-                if (modal) {
-                    modal.hide();
-                }
-                // Reset form state for next time
+            const submitBtn = event.target.querySelector('button[type="submit"]');
+            const originalBtnText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Enviando...';
+            submitBtn.disabled = true;
+
+            const formData = new URLSearchParams();
+            formData.append('nombre', document.getElementById('regName').value);
+            formData.append('correo', document.getElementById('regEmail').value);
+            formData.append('institucion', document.getElementById('regInstitution').value);
+            formData.append('modalidad', document.getElementById('regModalidad').value);
+
+            try {
+                await fetch(
+                    'https://script.google.com/macros/s/AKfycbynccgyOq3d9KRwVjybVldlI0Evpgo9urT-3fbXieUknyn8InsNXy4LFh_4F18GKY1G/exec',
+                    {
+                        method: 'POST',
+                        mode: 'no-cors',
+                        body: formData
+                    }
+                );
+
+                // Highlight success state
+                document.getElementById("registrationForm").classList.add("d-none");
+                document.getElementById("regSuccessMsg").classList.remove("d-none");
+                
+                // Optional: reset form after delay and hide modal
                 setTimeout(() => {
-                    document.getElementById("registrationForm").reset();
-                    document.getElementById("registrationForm").classList.remove("d-none");
-                    document.getElementById("regSuccessMsg").classList.add("d-none");
-                }, 500);
-            }, 3000);
+                    const modalEl = document.getElementById('registroModal');
+                    const modal = bootstrap.Modal.getInstance(modalEl);
+                    if (modal) {
+                        modal.hide();
+                    }
+                    // Reset form state for next time
+                    setTimeout(() => {
+                        document.getElementById("registrationForm").reset();
+                        document.getElementById("registrationForm").classList.remove("d-none");
+                        document.getElementById("regSuccessMsg").classList.add("d-none");
+                        submitBtn.innerHTML = originalBtnText;
+                        submitBtn.disabled = false;
+                    }, 500);
+                }, 3000);
+
+            } catch(error) {
+                alert("Error al registrar");
+                console.error(error);
+                submitBtn.innerHTML = originalBtnText;
+                submitBtn.disabled = false;
+            }
         }
     </script>
 </body>
